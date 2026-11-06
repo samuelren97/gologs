@@ -34,8 +34,8 @@ func Debugf(message string, args ...any) {
 }
 
 func Debug(message string) {
-	if os.Getenv("DEBUG") == "true" {
-		printWithLevel("DEBUG", message, "\033[36m")
+	if os.Getenv(DebugEnvVar) == "true" {
+		printWithLevel(DebugEnvVar, message, "\033[36m")
 	}
 }
 
