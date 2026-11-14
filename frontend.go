@@ -50,5 +50,5 @@ func Fatal(message string) {
 }
 
 func printWithLevel(level, message, color string) {
-	fmt.Printf("%s%-12s => %s\033[0m\n", color, level, message)
+	fmt.Printf("%s%-11s => %s\033[0m\n", color, level, message)
 }
