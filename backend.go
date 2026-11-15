@@ -49,6 +49,7 @@ func FatalBackendf(message string, args ...any) {
 
 func FatalBackend(message string) {
 	printBackendWithLevel("FATAL", message)
+	os.Exit(1)
 }
 
 func printBackendWithLevel(level, message string) {
